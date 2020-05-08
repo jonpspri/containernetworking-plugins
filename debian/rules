@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+export DH_GOLANG_BUILDPKG :=  \
+	github.com/containernetworking/plugins/plugins/meta/flannel \
+	github.com/containernetworking/plugins/plugins/meta/tuning \
+	github.com/containernetworking/plugins/plugins/meta/firewall \
+	github.com/containernetworking/plugins/plugins/meta/sbr \
+	github.com/containernetworking/plugins/plugins/meta/portmap \
+	github.com/containernetworking/plugins/plugins/meta/bandwidth \
+	github.com/containernetworking/plugins/plugins/main/bridge \
+	github.com/containernetworking/plugins/plugins/main/host-device \
+	github.com/containernetworking/plugins/plugins/main/ptp \
+	github.com/containernetworking/plugins/plugins/main/macvlan \
+	github.com/containernetworking/plugins/plugins/main/ipvlan \
+	github.com/containernetworking/plugins/plugins/main/loopback \
+	github.com/containernetworking/plugins/plugins/main/vlan \
+	github.com/containernetworking/plugins/plugins/ipam/dhcp \
+	github.com/containernetworking/plugins/plugins/ipam/host-local \
+	github.com/containernetworking/plugins/plugins/ipam/static
+
+export GO111MODULE := on
+export GOFLAGS := -mod=vendor
+
+%:
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+	ls obj-*-linux-gnu/bin/*
+	dh_auto_install -- --no-binaries --no-source

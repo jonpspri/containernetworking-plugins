@@ -1,0 +1,26 @@
+Source: containernetworking-plugins
+Section: devel
+Priority: optional
+Maintainer: Jonathan Springer <jonpspri@gmail.com>
+Build-Depends: debhelper-compat (=11),
+    dh-exec,
+    dh-golang,
+    golang-go,
+    go-md2man
+Standards-Version: 4.4.1
+Homepage: https://github.com/containernetworking/plugins
+Vcs-Browser: https://github.com/containernetworking/plugins
+Vcs-Git: https://github.com/containernetworking/plugins.git
+XS-Go-Import-Path: github.com/containernetworking/plugins
+
+Package: containernetworking-plugins
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Conflicts: kubernetes-cni
+Built-Using: ${misc:Built-Using}
+Description: Libraries for writing CNI plugins
+ The CNI (Container Network Interface) project consists of a specification
+ and libraries for writing plugins to configure network interfaces in Linux
+ containers, along with a number of supported plugins. CNI concerns itself
+ only with network connectivity of containers and removing allocated resources
+ when the container is deleted.

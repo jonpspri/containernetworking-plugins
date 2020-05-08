@@ -1,0 +1,5 @@
+containernetworking-plugins (0.8.5-1) eoan; urgency=medium
+
+  * v0.8.1 debian/ubuntu packaging
+
+ -- Jonathan Springer <jonpspri@gmail.com>  Fri, 08 May 2020 08:53:24 -0400
