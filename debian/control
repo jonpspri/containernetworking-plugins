@@ -14,7 +14,7 @@ Vcs-Git: https://github.com/containernetworking/plugins.git
 XS-Go-Import-Path: github.com/containernetworking/plugins
 
 Package: containernetworking-plugins
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: kubernetes-cni
 Built-Using: ${misc:Built-Using}

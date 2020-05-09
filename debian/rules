@@ -29,5 +29,4 @@ export GOFLAGS := -mod=vendor
 override_dh_auto_test:
 
 override_dh_auto_install:
-	ls obj-*-linux-gnu/bin/*
 	dh_auto_install -- --no-binaries --no-source

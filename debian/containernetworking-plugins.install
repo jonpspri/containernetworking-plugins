@@ -1,2 +1,17 @@
 #!/usr/bin/dh-exec
-obj-*-linux-gnu/bin opt/cni
+obj-*-linux-gnu/bin usr/lib/cni
+README* usr/share/doc/containernetworking-plugin
+plugins/ipam/dhcp/README.md         => usr/share/doc/containernetworking-plugins/ipam_dhcp.md
+plugins/ipam/host-local/README.md   => usr/share/doc/containernetworking-plugins/ipam_host-local.md
+plugins/ipam/static/README.md       => usr/share/doc/containernetworking-plugins/ipam_static.md
+plugins/main/bridge/README.md       => usr/share/doc/containernetworking-plugins/main_bridge.md
+plugins/main/host-device/README.md  => usr/share/doc/containernetworking-plugins/main_host-device.md
+plugins/main/ipvlan/README.md       => usr/share/doc/containernetworking-plugins/main_ipvlan.md
+plugins/main/macvlan/README.md      => usr/share/doc/containernetworking-plugins/main_macvlan.md
+plugins/main/ptp/README.md          => usr/share/doc/containernetworking-plugins/main_ptp.md
+plugins/meta/bandwidth/README.md    => usr/share/doc/containernetworking-plugins/meta_bandwidth.md
+plugins/meta/firewall/README.md     => usr/share/doc/containernetworking-plugins/meta_firewall.md
+plugins/meta/flannel/README.md      => usr/share/doc/containernetworking-plugins/meta_flannel.md
+plugins/meta/portmap/README.md      => usr/share/doc/containernetworking-plugins/meta_portmap.md
+plugins/meta/sbr/README.md          => usr/share/doc/containernetworking-plugins/meta_sbr.md
+plugins/meta/tuning/README.md       => usr/share/doc/containernetworking-plugins/meta_tuning.md

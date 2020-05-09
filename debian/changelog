@@ -1,4 +1,4 @@
-containernetworking-plugins (0.8.5-1) eoan; urgency=medium
+containernetworking-plugins (0.8.5-1~ppa1) eoan; urgency=medium
 
   * v0.8.1 debian/ubuntu packaging
 
