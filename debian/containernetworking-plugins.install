@@ -1,5 +1,5 @@
 #!/usr/bin/dh-exec
-obj-*-linux-gnu/bin usr/lib/cni
+obj-*-linux-gnu/bin/* usr/lib/cni
 README* usr/share/doc/containernetworking-plugin
 plugins/ipam/dhcp/README.md         => usr/share/doc/containernetworking-plugins/ipam_dhcp.md
 plugins/ipam/host-local/README.md   => usr/share/doc/containernetworking-plugins/ipam_host-local.md

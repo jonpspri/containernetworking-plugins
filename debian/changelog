@@ -1,3 +1,9 @@
+containernetworking-plugins (0.8.5-1~ppa2) eoan; urgency=medium
+
+  * Correct placement of output binaries to /usr/lib/cni (no bin directory)
+
+ -- Jonathan Springer <jonpspri@gmail.com>  Sun, 10 May 2020 09:51:54 -0400
+
 containernetworking-plugins (0.8.5-1~ppa1) eoan; urgency=medium
 
   * v0.8.1 debian/ubuntu packaging
